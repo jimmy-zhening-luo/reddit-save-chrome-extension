@@ -1,8 +1,18 @@
 {
-  "name": "{PACKAGE}",
+  "name": "reddit-save-chrome-extension",
   "version": "0.0.0",
-  "description": "",
-  "keywords": [],
+  "description": "Google Chrome extension that lets you save Reddit posts while you browse.",
+  "keywords": [
+    "reddit",
+    "reddit-api",
+    "save",
+    "article",
+    "bookmarks",
+    "reading-list",
+    "favorites",
+    "chrome-extension",
+    "google-chrome"
+  ],
   "license": "MIT",
   "type": "module",
   "private": true,
@@ -11,19 +21,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jimmy-zhening-luo/{REPO}.git"
+    "url": "git+https://github.com/jimmy-zhening-luo/reddit-save-chrome-extension.git"
   },
-  "homepage": "https://github.com/jimmy-zhening-luo/{REPO}#readme",
+  "homepage": "https://github.com/jimmy-zhening-luo/reddit-save-chrome-extension#readme",
   "bugs": {
-    "url": "https://github.com/jimmy-zhening-luo/{REPO}/issues"
+    "url": "https://github.com/jimmy-zhening-luo/reddit-save-chrome-extension/issues"
   },
   "author": {
     "name": "Jimmy Zhening Luo",
     "email": "1450044+jimmy-zhening-luo@users.noreply.github.com",
     "url": "https://jimm.my"
   },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "",
+  "types": "",
   "peerDependencies": {},
   "peerDependenciesMeta": {},
   "optionalDependencies": {},
@@ -31,6 +41,8 @@
   "devDependencies": {
     "eslint": "~8.57.0",
     "linted": "~14.1.1",
+    "npm-run-all": "^4.1.5",
+    "run-script-os": "^1.1.6",
     "typescript": "^5.5.3"
   },
   "jest": {
@@ -41,7 +53,6 @@
   },
   "scripts": {
     "eslint": "eslint --cache --fix",
-    "lint:svelte": "(svelte-kit sync) && (svelte-check --tsconfig ./tsconfig.json) && (npm run eslint -- src/**/*.svelte)",
     "lint:source": "npm run eslint -- src/**/*.{js,ts,html}",
     "lint:configs": "npm run eslint -- {*,.github/workflows/*}.{json,jsonc,js,ts,yml}",
     "lint": "(npm run --if-present lint:svelte) && (npm run lint:source) && (npm run lint:configs)",
